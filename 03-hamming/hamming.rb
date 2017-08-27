@@ -2,6 +2,8 @@ module Hamming
   def self.compute(first_string, second_string)
     if first_string == second_string
       return 0
+    elsif first_string.length != second_string.length
+      raise ArgumentError.new "Strings must be same length to compute"
     else
       differences = []
       first_input = first_string.split("")
