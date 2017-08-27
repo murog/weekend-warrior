@@ -16,12 +16,10 @@ describe Hamming do
   end
 
   it "Check complete distance in small strands" do
-    skip
     expect(Hamming.compute('AG', 'CT')).must_equal 2
   end
 
   it "Check small distance in small strands" do
-    skip
     expect(Hamming.compute('AT', 'CT')).must_equal 1
   end
 
