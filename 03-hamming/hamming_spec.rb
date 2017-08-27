@@ -12,7 +12,6 @@ describe Hamming do
   end
 
   it "Check complete distance in single nucleotide strands" do
-    skip
     expect(Hamming.compute('A', 'G')).must_equal 1
   end
 
